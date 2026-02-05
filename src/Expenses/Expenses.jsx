@@ -15,10 +15,12 @@ function Expenses(props){
 
     return (
         <Card className='expenses'>
-            <ExpensesFilter selected={filteredYear} onChangeFilter={changeHandler}/>
-            {props.dataMain.map((expense) => (
-            <ExpenseItem key={expense.id} data={expense} />
-            ))}
+            <ExpensesFilter onChangeFilter={changeHandler}/>
+            {
+                props.expenses.map((expense) => {
+                    return<ExpenseItem expenseData={expense} key={expense.id}/>
+                })
+            }
         </Card>
     )
 }
