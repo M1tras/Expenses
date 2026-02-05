@@ -25,7 +25,7 @@ const DYMMY_EXPENSES =
     },
     {
       id: 'id4',
-      date : new Date(2025, 1, 2),
+      date : new Date(2024, 1, 2),
       title : 'Legenday Potato',
       price : 9999.99
     }
